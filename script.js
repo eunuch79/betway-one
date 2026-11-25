@@ -59,14 +59,6 @@ event.preventDefault();
   } catch (error) {
     console.error(error);
 
-    if (status) {
-      status.textContent = "Unable to send. Please try again.";
-      status.style.color = "#ef4444";
-    }
-
-  } finally {
-    if (submitButton) submitButton.disabled = false;
-  }
 });
 
 });
