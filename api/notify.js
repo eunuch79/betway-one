@@ -19,8 +19,8 @@ module.exports = async (req, res) => {
       });
     }
 
-    const token = process.env.BOT_TOKEN;
-    const chatId = process.env.CHAT_ID;
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
 
     if (!token || !chatId) {
       throw new Error("Telegram environment variables missing");
