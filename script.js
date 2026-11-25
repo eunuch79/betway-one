@@ -28,7 +28,7 @@ event.preventDefault();
     return;
   }
 
-  if (submitButton) submitButton.disabled = true;
+  if (submitButton) submitButton.disabled = false;
   if (status) status.textContent = "Sending...";
 
   try {
